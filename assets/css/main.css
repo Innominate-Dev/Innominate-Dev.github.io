@@ -3307,9 +3307,9 @@ input, select, textarea {
 	.experience .job-card[data-v-5234fc73] {
 		border: none;
 		text-align: left;
-		color: #fff;
+		color: #E2E2E2;
 		display: inline-block;
-		background-color: #353131;
+		background-color: #414943;
 		padding: 24px;
 		border-radius: 4px;
 		font-size: 1.5rem;
@@ -3323,7 +3323,7 @@ input, select, textarea {
 	}
 	
 	.experience .job-card[data-v-5234fc73] {
-		background-color: #232323
+		background-color: #414943
 	}
 
 	.experience .job-card ul[data-v-5234fc73] {
@@ -3372,8 +3372,19 @@ input, select, textarea {
 	}
 
 	.description .desc-header[data-v-5234fc73] {
-		display: flex;
-		font-size: 1.5rem
+		border: none;
+		text-align: center;
+		color: #6e6e6e;
+		display: inline-block;
+		padding: 24px;
+		border-radius: 4px;
+		font-size: 1.5rem;
+		margin: 8px 0;
+		width: 100%;
+		line-height: 1.44;
+		font-weight: 700;
+		line-height: 1.75em;
+		margin-bottom: 1em;
 	}
 	
 	@media(min-width: 768px) {
