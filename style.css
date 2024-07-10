@@ -392,6 +392,13 @@ p{
     cursor: pointer;
 }
 
+/* FORCED DARK MODE FOR USERS */
+
+@media screen and (prefers-color-scheme:dark) {
+    .aba_white { color: #FFFFFF!important; }
+    .aba_wrap { background-color: #1B1B1B !important;}
+}
+
 /* NEEDS WORKING ON [changes the view for phone users]*/
 
 @media(max-width: 700px){
