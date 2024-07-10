@@ -1,126 +1,465 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Learn more about me and my work</p>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title> Ayaan's Portfolio </title>
+    </head>
+
+    <!-- Body of page -->
+
+    <body>
+
+
+        <div class="main">
+
+            <section class="header">
+                <nav>
+                    <a href="index.html"><img src="images/logo.jpg"></a>
+                    <p class="name">Ayaan Ahmed</p>
+                    <div class="nav-links">
+                        <i class="fa fa-times"></i>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars"></i>
+                </nav>
+            </section>
+            
+        <!-- Welcome Page -->
+        
+        <section class="welcome">
+            <div>
+                <h1 class="welcomeTitle">Ayaan Ahmed</h1>
+                <div>
+                    <h2 class="welcomeRole">Games Programmer</h2>
+                </div>
+            </div>
+            <img class="welcome image" src="images/man-working-on-laptop.jpg" alt="" height="auto" width="500" >
         </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a software developer with a passion for programming. My experience includes working on various projects using different programming languages.</p>
+        
+        <!-- PROJECT PAGE -->
+
+        <section class="projects">
+            <div>
+                <h1 class="title"><span style="color: #fff;">Project</span> <span style="color: #ACFDB0;">Highlights</span></h1>
+            </div>
+            <div class="display">
+
+                <div class="leftcolumn">
+                    <img class="welcome image" src="images/man-working-with-notepad.jpg" alt="" height="auto" width="300">
+                </div>
+
+                <div class="rightcolumn">
+                    <div class="showcase">
+
+
+
+                        <img class="image" src="GIFs/VRGame-ezgif.com-crop.gif" alt="" style="object-fit: scale-down;">
+                        <p> 
+                            <span style="color: #fff; font: 46; font-weight: 800;text-align: right;">The Swoosh Games</span>
+                            <br>
+                            <br>
+                            The swoosh games is a VR game that is developed in unity. 
+                        </p>
+
+                        <!-- READ MORE BUTTON -->
+
+                        <button class="readmore-btn">
+                            <span class="book-wrapper">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="rgb(86, 69, 117)"
+                                viewBox="0 0 126 75"
+                                class="book"
+                              >
+                                <rect
+                                  stroke-width="3"
+                                  stroke="#fff"
+                                  rx="7.5"
+                                  height="70"
+                                  width="121"
+                                  y="2.5"
+                                  x="2.5"
+                                ></rect>
+                                <line stroke-width="3" stroke="#fff" y2="75" x2="63.5" x1="63.5"></line>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M25 20H50"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M101 20H76"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M16 30L50 30"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M110 30L76 30"
+                                ></path>
+                              </svg>
+                          
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 65 75"
+                                class="book-page"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M40 20H15"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M49 30L15 30"
+                                ></path>
+                                <path
+                                  stroke-width="3"
+                                  stroke="#fff"
+                                  d="M2.5 2.5H55C59.1421 2.5 62.5 5.85786 62.5 10V65C62.5 69.1421 59.1421 72.5 55 72.5H2.5V2.5Z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="text"> Read more </span>
+                        </button>
+                    </div>
+                    
+                    <div class="showcase">
+                        
+                        <img class="image" src="GIFs/slime-dash-gif.gif" alt="" style="object-fit: scale-down;">
+                        <p> 
+                            <span style="color: #fff; font: 46; font-weight: 800;text-align: right;"> Slime Dash </span>
+                            <br>
+                            <br>
+                            Slime dash is a 2d game that is developed in unity.
+                        </p>
+
+                        <!-- READ MORE BUTTON -->
+
+                        <button class="readmore-btn">
+                            <span class="book-wrapper">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="rgb(86, 69, 117)"
+                                viewBox="0 0 126 75"
+                                class="book"
+                              >
+                                <rect
+                                  stroke-width="3"
+                                  stroke="#fff"
+                                  rx="7.5"
+                                  height="70"
+                                  width="121"
+                                  y="2.5"
+                                  x="2.5"
+                                ></rect>
+                                <line stroke-width="3" stroke="#fff" y2="75" x2="63.5" x1="63.5"></line>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M25 20H50"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M101 20H76"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M16 30L50 30"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M110 30L76 30"
+                                ></path>
+                              </svg>
+                          
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 65 75"
+                                class="book-page"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M40 20H15"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M49 30L15 30"
+                                ></path>
+                                <path
+                                  stroke-width="3"
+                                  stroke="#fff"
+                                  d="M2.5 2.5H55C59.1421 2.5 62.5 5.85786 62.5 10V65C62.5 69.1421 59.1421 72.5 55 72.5H2.5V2.5Z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="text"> Read more </span>
+                        </button>
+
+                    </div>
+
+                    <div class="showcase">
+                        
+                        <img class="image" src="GIFs/zombie-shooter-gif.gif" alt="" style="object-fit: scale-down;">
+                        <p> 
+                            <span style="color: #fff; font: 46; font-weight: 800;text-align: right;">Zombie Shooter</span>
+                            <br>
+                            <br>
+                            The zombie shooter game was developed using Unreal Engine 5.
+                        </p>
+
+                        <!-- READ MORE BUTTON NOTE: ctrl + shift + [ to collapse -->
+
+                        <button class="readmore-btn">
+                            <span class="book-wrapper">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="rgb(86, 69, 117)"
+                                viewBox="0 0 126 75"
+                                class="book"
+                              >
+                                <rect
+                                  stroke-width="3"
+                                  stroke="#fff"
+                                  rx="7.5"
+                                  height="70"
+                                  width="121"
+                                  y="2.5"
+                                  x="2.5"
+                                ></rect>
+                                <line stroke-width="3" stroke="#fff" y2="75" x2="63.5" x1="63.5"></line>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M25 20H50"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M101 20H76"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M16 30L50 30"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M110 30L76 30"
+                                ></path>
+                              </svg>
+                          
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 65 75"
+                                class="book-page"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M40 20H15"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M49 30L15 30"
+                                ></path>
+                                <path
+                                  stroke-width="3"
+                                  stroke="#fff"
+                                  d="M2.5 2.5H55C59.1421 2.5 62.5 5.85786 62.5 10V65C62.5 69.1421 59.1421 72.5 55 72.5H2.5V2.5Z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="text"> Read more </span>
+                        </button>
+                    </div>
+
+                    <div class="showcase">
+                        
+                        <img class="image" src="GIFs/MLAITest-GIF.gif" alt="" style="object-fit: scale-down;">
+                        <p> 
+                            <span style="color: #fff; font: 46; font-weight: 800;text-align: right;">Machine Learning Agents</span>
+                            <br>
+                            <br>
+                            The ML Agents was developed using unity and python.
+                        </p>
+
+                        <!-- READ MORE BUTTON NOTE: ctrl + shift + [ to collapse -->
+
+                        <button class="readmore-btn">
+                            <span class="book-wrapper">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="rgb(86, 69, 117)"
+                                viewBox="0 0 126 75"
+                                class="book"
+                              >
+                                <rect
+                                  stroke-width="3"
+                                  stroke="#fff"
+                                  rx="7.5"
+                                  height="70"
+                                  width="121"
+                                  y="2.5"
+                                  x="2.5"
+                                ></rect>
+                                <line stroke-width="3" stroke="#fff" y2="75" x2="63.5" x1="63.5"></line>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M25 20H50"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M101 20H76"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M16 30L50 30"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M110 30L76 30"
+                                ></path>
+                              </svg>
+                          
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 65 75"
+                                class="book-page"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M40 20H15"
+                                ></path>
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-width="4"
+                                  stroke="#fff"
+                                  d="M49 30L15 30"
+                                ></path>
+                                <path
+                                  stroke-width="3"
+                                  stroke="#fff"
+                                  d="M2.5 2.5H55C59.1421 2.5 62.5 5.85786 62.5 10V65C62.5 69.1421 59.1421 72.5 55 72.5H2.5V2.5Z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="text"> Read more </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <!-- Add your project details here -->
+
+        <!-- TECHNICAL SKILLS SECTION -->
+
+        <section class="skills">
+            <div>
+                <h1 class="title"><span style="color: #fff;">Technical</span> <span style="color: #ACFDB0;">Skills</span></h1>
+            </div>
+            <div class="display">
+                <div class="leftcolumn">
+                    <div class="software-skills-main-div">
+                        <ul class="icons"><li><i class="fa-brands fa-github"></i> <span class="names" style="color: #fff; text-align: right;">Github</span></li></ul>
+                        <ul class="icons"><li><i class="fa-brands fa-unity"></i> <span class="names" style="color: #fff; text-align: right;">Unity</span></li></ul>
+                        <ul class="icons"><li><i class="fa-brands fa-html5"></i><span class="names" style="color: #fff; text-align: right;">HTML</span></li></ul>
+                        <ul class="icons"><li><i class="fa-brands fa-css3-alt"></i></i><span class="names" style="color: #fff; text-align: right;">CSS</span></li></ul>
+                        <ul class="icons"><li><i class="fa-brands fa-python"></i><span class="names" style="color: #fff; text-align: right;">Python</span></li></ul>
+
+                    </div>
+                    <div>
+                        <p class="description"> I am skilled at many things and have developed many skills like:
+                            <br>
+                            ⚡Problem solving skills
+                            <br>
+                            ⚡Project Management
+                            <br>
+                            ⚡Communication
+                            <br>
+                            ⚡Team work
+                             </p>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img class="image" src="images/man-skill-bubbles.jpg" alt="" height="auto" width="500">
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>If you have any questions or want to collaborate, feel free to reach out to me.</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+
+        <!-- FOOTER SECTION -->
+
+        <section class="footer">
+            <div>
+                <img src="images/logo.jpg"> 
+                <p class="name">Ayaan Ahmed</p>
+            </div>
+            <div class="contacts">
+                <ul class="icons"><a href="https://github.com/Innominate-Dev"><i class="fa-brands fa-github"></i></a></ul>
+                <ul class="icons"><a href="https://www.linkedin.com/in/ayaan-ahmed-6487602a9/"><i class="fa-brands fa-linkedin"></i></a></ul>
+                <ul class="icons"><a href="mailto:Ayaan28266@gmail.com ? subject=The%20Subject&body=The%20Body "><i class="fa-solid fa-envelope"></i></i></a></ul>
+
+
+                <!-- <button onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=Ayaan28266@gmail.com', '_blank')">Create Draft Email</button> -->
+            </div>
+            <div>
+                <p class="text">Thank you for viewing my portfolio</p>
+                <p class="text">Designed by yours truly Ayaan.</p>
+            </div>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2022 My Portfolio. All rights reserved.</p>
-    </footer>
-</body>
+    </div>
+    </body>
 </html>
-
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #1e1e1e;
-    padding: 1rem 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding-top: 7rem;
-}
-
-section {
-    min-height: 100vh;
-    padding: 5rem 0;
-}
-
-h1, h2 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-input, textarea {
-    background-color: #2e2e2e;
-    border: none;
-    border-radius: 5px;
-    padding: 1rem;
-    font-size: 1.
-}
-</style>
