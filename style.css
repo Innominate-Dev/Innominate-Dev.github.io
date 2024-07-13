@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #1B1B1B;
     margin: 0;
@@ -7,6 +11,10 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2% 6%; 
+}
+
+.main{
+    
 }
 
 .header{
@@ -355,7 +363,7 @@ p{
 }
 
 .footer .text{
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     line-height: normal;
     color: #fff;
@@ -399,6 +407,43 @@ p{
     .aba_wrap { background-color: #1B1B1B !important;}
 }
 
+/* PROJECT PAGE CSS */
+
+.video{
+    margin-bottom: 200px;
+    justify-content: center;
+    display: flex;
+}
+
+.project{
+    display: flex;
+}
+
+.project .rightcolumn{
+    margin: 50px;
+}
+.project .leftcolumn{
+    margin: 50px;
+}
+
+.job-card{
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    background: #1B1B1B;
+    box-shadow:  16px 16px 32px #171717,
+                -16px -16px 32px #1f1f1f;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-bottom:100px ;
+    width: 700px;
+    height: 300px;
+}
+
+.job-card-desc{
+    font-weight: 700;
+    font-size: 24px;
+}
 /* NEEDS WORKING ON [changes the view for phone users]*/
 
 @media(max-width: 700px){
