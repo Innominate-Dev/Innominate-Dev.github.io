@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@700&family=Poppins:wght@700&display=swap');
 
+/* DEFAULT CONFIGURATIONS */
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -42,4 +44,145 @@ body{
     min-height: 100vh;
     font-family: montserrat, poppins, inter, sans-serif;
     overflow-x: hidden
+}
+
+h1{
+    color: #acfdb0;
+    font-size: 40px;
+
+    font-family: montserrat;
+}
+h2{
+    color:#ffffff;
+    font-size: 23px;
+    font-family: poppins;
+}
+
+
+
+
+
+/* Nav Bar for Desktop users */
+
+.nav-bar{ 
+    width: 50%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    place-content: start space-evenly;
+
+    position: relative;
+    padding: .25rem;
+    background-color: #acfdb02d;
+
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: poppins;
+}
+.nav-bar li{
+    list-style: none;
+}
+
+.nav-bar::before { /* Gradient Borders */
+    content: " ";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    border: 5px solid transparent;
+    background: linear-gradient(90deg,#acfdb0,#02c1c2) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+.nav-bar .navigation{
+    display: flex;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.nav-bar .navigation .nav_item{
+    margin-right: 4rem;
+}
+
+.sidebar{
+    position: fixed;
+    top: -3rem;
+    right: 0;  
+    height:100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.169);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;    
+    
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.sidebar li{
+    
+    padding:20px;
+}
+
+@media (max-width: 700px) {
+    .nav-bar{
+        display:none;
+    }
+}
+
+/* HOME SECTION */
+
+.home{
+    position: relative;
+    display: flex;    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    height: 100vh;
+    width: 100%;
+    z-index: 1
+}
+
+.heading{
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.3;
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    z-index: 1;
+    font-size: 4.5rem;
+    margin-block-end: 150px;
+}
+
+.heading .heading-line-1{
+    color: #acfdb0;
+    font-size: 6rem;
+}
+
+@media (max-width: 700px) {
+    .heading-line-1, .heading-line-2 {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 }
