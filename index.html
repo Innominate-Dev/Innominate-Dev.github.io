@@ -5,9 +5,10 @@
             @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
         </style>
         <!-- <link rel="icon" type="image/jpg" href="/images/transparent-logo.png"/> -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
-        <script type = "text/javascript" src="scripts.js"></script>
+        <script type = "text/javascript" src="script.js"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <title> Ayaan's Portfolio </title>
     </head>
@@ -15,59 +16,81 @@
 <!-- PAGE BODY -->
 
     <body>
-        <nav class="nav-bar">
-            <ul class="sidebar">
-                <li class="nav_item" id="nav-home">
-                    <a href="#Home"> Home</a>
-                </li>
-                <li class="nav_item" id="nav-aboutme">
-                    <a href="#AboutMe"> About me</a>
-                </li>
-                <li class="nav_item" id="nav-projects">
-                    <a href="#Projects"> Projects</a>
-                </li>
-                <li class="nav_item" id="nav-contact">
-                    <a href="#Contacts"> Contacts</a>
-                </li>
-                
-            </ul>
-
-
+        <nav>
             <ul class="navigation">
                 <li class="nav_item" id="nav-home">
-                    <a href="#Home"> Home</a>
+                    <a href="#hero"> Home</a>
                 </li>
                 <li class="nav_item" id="nav-aboutme">
-                    <a href="#AboutMe"> About me</a>
+                    <a href="#aboutme"> About me</a>
                 </li>
                 <li class="nav_item" id="nav-projects">
-                    <a href="#Projects"> Projects</a>
+                    <a href="#projects"> Projects</a>
                 </li>
                 <li class="nav_item" id="nav-contact">
-                    <a href="#Contacts"> Contacts</a>
-                </li>
-                <li onclick=showSidebar() class="nav_item">
-                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#contacts"> Contacts</a>
                 </li>
             </ul>
         </nav>
 
-        <div class="background">
-            <!-- STARRY EFFECT HERE-->
-        </div>
-
-        <div class="home" id="home">
-            <div class="heading">
-                <div class="heading-line-1">
-                    Hello, I’m Ayaan <br>
-                </div>
-                <div class="heading-line-2"> 
-                    Passionate Software Engineering Student
-                </div>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm Ayaan</h1>
+                <h2>Passionate Software Engineering Student</h3>
             </div>
-        </div>
+        </section>
 
-        <script src="scripts.js"></script>
+        <section id="about" class="about">
+            <div class="about-container">
+                <!-- Left Column: Avatar Image and Personal Information -->
+                <article class="left-column">
+                    <h2>About Me</h2>
+                    <div class="about-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="about-info">
+
+                        <p>Hi! I'm Ayaan, a passionate Software Engineer with expertise in full-stack development. I enjoy tackling challenging problems and creating efficient, scalable applications. I'm always learning new technologies to keep my skills sharp.</p>
+                    </div>
+                </article>
+        
+                <!-- Right Column: Skills and Technologies -->
+                <aside class="right-column">
+                    <h3>Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill-box">
+                            <i class="fa-brands fa-html5 skill-icon"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fa-brands fa-css3-alt skill-icon"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fa-brands fa-js skill-icon"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fa-brands fa-react skill-icon"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fa-brands fa-java skill-icon"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fa-brands fa-python skill-icon"></i>
+                            <span>Python</span>
+                        </div>
+                        <!-- Add more skill boxes as needed -->
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+
+        <script src="script.js"></script>
+
     </body>
 
 </html>
