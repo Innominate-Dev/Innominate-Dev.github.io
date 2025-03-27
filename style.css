@@ -80,7 +80,6 @@ header {
 .hero h1 {
     font-size: 40px;
     color: #ACFDB0; /* Light green */
-
     line-height: 60px;
 }
 
@@ -91,51 +90,133 @@ header {
     font-weight: 600;
 }
 
-.about{
+/* General Styles */
+.about {
     padding: 60px 20px;
     background-color: #222; /* Dark background */
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+    text-align: center; /* Center the text */
+    margin-top: 50px; /* Adds some space above the "About Me" section */
 }
-.about-avatar {
-    border-radius: 25px;
-    border: 5px linear-gradient(to right, #02C1C2, #02C1C2);
-    padding: 20px;
-    width: 150px;
-    height: 150px;
+
+/* Underline block under the "About Me" */
+.about h2 {
+    display: inline-block; /* Makes the block wrap around the text */
+    padding-bottom: 10px; /* Space between text and underline block */
     position: relative;
 }
 
-.fa-solid {
-    display: flex;
-    flex-direction: column;
-    font-size: 120px;
+.about h2::after {
+    content: '';
     position: absolute;
-    bottom: 10px; /* Moves the icon to the bottom of the container */
-    left: 50%;
-    transform: translateX(-50%); /* Centers the icon horizontally */
+    bottom: 12px; /* Position just below the text */
+    right: -0.5rem;
+    width: 80%; /* Limit the width of the block to the "About" text */
+    height: 10px; /* Height of the block */
+    background-color: rgba(172, 253, 176, 0.5); /* Green with 50% transparency */
+    border-radius: 2px; /* Optional: Rounded edges for the block */
 }
 
-/* Container for both left and right columns */
+/* Centering the about-container with margin for spacing */
 .about-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap; /* Makes sure it's responsive */
+    align-items: flex-start; /* Aligns both columns to the top */
+    margin: 0 auto; /* Centers the columns */
+    margin-top: 100px;
+    max-width: 1300px; /* Restricts the width of the container */
+    padding: 0 20px; /* Adds space to the sides */
 }
-/* Left Column Styles: Image and About Me Paragraph */
+
+/* Left Column Styles: Avatar Image and Personal Information */
 .left-column {
     display: flex;
+    align-items: center; /* Aligns the avatar and text vertically */
+    flex: 1;
+    max-width: 650px; /* Increased width for left column */
+    text-align: left; /* Align the text to the left */
+    margin-right: 40px; /* Adds some space between the icon and the text */
+}
+
+.about-avatar {
+    background: linear-gradient(#222, #222) padding-box,
+    linear-gradient(to right, #ACFDB0, #02C1C2) border-box;
+    border-radius: 30px; /* Slightly more rounded */
+    border: 4px solid transparent;
+    padding: 40px; /* Increased padding to make more room */
+    width: 650px; /* Larger width for the avatar box */
+    height: 250px; /* Larger height for the avatar box */
+    position: relative;
+    margin-right: 40px; /* Increased space between the avatar and the text */
+}
+
+.fa-solid {
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    font-size: 180px; /* Increased icon size */
+    position: absolute;
+    bottom: 0px; /* Moves the icon to the bottom of the container */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the icon horizontally */
+}
+
+.about-info {
+    max-width: 500px; /* Increased width of the text block */
+}
+
+/* Right Column Styles: Skills and Technologies */
+.right-column {
     flex: 1;
     max-width: 500px;
+    text-align: left;
+}
+
+/* Skills Grid Layout */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller skill boxes with a minimum of 120px per item */
+    gap: 10px; /* Even smaller gap between skill boxes */
+    margin-top: 20px;
+}
+
+/* Skill Box Styling */
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Reduced padding */
+    background: linear-gradient(#222, #222) padding-box, linear-gradient(to right, #ACFDB0, #02C1C2) border-box;
+    border-radius: 15px;
+    border: 4px solid transparent;
+    width: 100%;
+    height: 100px; /* Reduced height */
     text-align: center;
 }
+
+.skill-box .skill-icon {
+    font-size: 24px; /* Smaller icon size */
+    color: #ACFDB0;
+}
+
+.skill-box span {
+    font-size: 14px; /* Smaller text for skill name */
+    color: white;
+    margin-top: 8px;
+}
+
+/* Add some margin to the rest of the content so it doesn’t overlap the fixed navbar */
+main {
+    padding-top: 100px; /* Adjust this based on your navbar height */
+}
+
+/* Optional: Change navbar background color when scrolling down */
+header.scrolled {
+    background-color: rgba(51, 51, 51, 0.9); /* Darken background on scroll */
+}
+
 
 /* Add some margin to the rest of the content so it doesn’t overlap the fixed navbar */
 main {
