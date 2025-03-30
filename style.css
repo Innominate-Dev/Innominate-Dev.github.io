@@ -90,7 +90,7 @@ header {
     font-weight: 600;
 }
 
-/* General Styles */
+/* About Section General Styles */
 .about {
     padding: 60px 20px;
     background-color: #222; /* Dark background */
@@ -133,10 +133,11 @@ header {
 /* Left Column Styles: Avatar Image and Personal Information */
 .left-column {
     display: flex;
-    align-items: center; /* Aligns the avatar and text vertically */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
     flex: 1;
     max-width: 650px; /* Increased width for left column */
-    text-align: left; /* Align the text to the left */
+    text-align: center; /* Align the text to the center */
     margin-right: 40px; /* Adds some space between the icon and the text */
 }
 
@@ -146,16 +147,17 @@ header {
     border-radius: 30px; /* Slightly more rounded */
     border: 4px solid transparent;
     padding: 40px; /* Increased padding to make more room */
-    width: 650px; /* Larger width for the avatar box */
-    height: 250px; /* Larger height for the avatar box */
+    width: 250px; /* Keep the same width */
+    height: 250px; /* Keep the same height */
     position: relative;
-    margin-right: 40px; /* Increased space between the avatar and the text */
+    margin-top: 50px;
+    margin-bottom: 20px; /* Adds space between the avatar and the paragraph */
 }
 
 .fa-solid {
     display: flex;
     flex-direction: column;
-    font-size: 180px; /* Increased icon size */
+    font-size: 180px; /* Keeps the icon size the same */
     position: absolute;
     bottom: 0px; /* Moves the icon to the bottom of the container */
     left: 50%;
@@ -164,7 +166,10 @@ header {
 
 .about-info {
     max-width: 500px; /* Increased width of the text block */
+    margin-top: 20px; /* Adds space between the avatar and the text */
+    text-align: center; /* Centers the text */
 }
+
 
 /* Right Column Styles: Skills and Technologies */
 .right-column {
@@ -187,25 +192,78 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px; /* Reduced padding */
+    padding: 10px; /* Keeping the padding as is */
     background: linear-gradient(#222, #222) padding-box, linear-gradient(to right, #ACFDB0, #02C1C2) border-box;
     border-radius: 15px;
     border: 4px solid transparent;
     width: 100%;
-    height: 100px; /* Reduced height */
+    height: 100px; /* Keeping the height as is */
     text-align: center;
 }
 
 .skill-box .skill-icon {
-    font-size: 24px; /* Smaller icon size */
-    color: #ACFDB0;
+    width: 50px;  /* Adjust icon size */
+    height: auto;
 }
 
 .skill-box span {
-    font-size: 14px; /* Smaller text for skill name */
+    font-size: 14px; /* Keeping the smaller text size */
     color: white;
     margin-top: 8px;
 }
+
+/* General Styles */
+.project {
+    padding: 60px 20px;
+    background-color: #222; /* Dark background */
+    color: white;
+    text-align: center; /* Center the text */
+    margin-top: 50px; /* Adds some space above the "About Me" section */
+}
+
+/* Underline block under the "About Me" */
+.project h2 {
+    display: inline-block; /* Makes the block wrap around the text */
+    padding-bottom: 10px; /* Space between text and underline block */
+    position: relative;
+}
+
+.about h2::after {
+    content: '';
+    position: absolute;
+    bottom: 12px; /* Position just below the text */
+    right: -0.5rem;
+    width: 80%; /* Limit the width of the block to the "About" text */
+    height: 10px; /* Height of the block */
+    background-color: rgba(172, 253, 176, 0.5); /* Green with 50% transparency */
+    border-radius: 2px; /* Optional: Rounded edges for the block */
+}
+
+/* Centering the about-container with margin for spacing */
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Makes sure it's responsive */
+    align-items: flex-start; /* Aligns both columns to the top */
+    margin: 0 auto; /* Centers the columns */
+    margin-top: 100px;
+    max-width: 1300px; /* Restricts the width of the container */
+    padding: 0 20px; /* Adds space to the sides */
+}
+
+/* Left Column Styles: Avatar Image and Personal Information */
+.left-column {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    flex: 1;
+    max-width: 650px; /* Increased width for left column */
+    text-align: center; /* Align the text to the center */
+    margin-right: 40px; /* Adds some space between the icon and the text */
+}
+
+
 
 /* Add some margin to the rest of the content so it doesn’t overlap the fixed navbar */
 main {
