@@ -55,6 +55,7 @@ header {
     margin: auto;
     transition:0.5s;
 }
+
 /* After they hover go back to normal */
 .navigation a:hover::after{
     width: 100%;
@@ -228,18 +229,18 @@ header {
     position: relative;
 }
 
-.about h2::after {
+.project h2::after {
     content: '';
     position: absolute;
     bottom: 12px; /* Position just below the text */
     right: -0.5rem;
-    width: 80%; /* Limit the width of the block to the "About" text */
+    width: 80%; /* Limit the width of the block to the "Project" text */
     height: 10px; /* Height of the block */
     background-color: rgba(172, 253, 176, 0.5); /* Green with 50% transparency */
     border-radius: 2px; /* Optional: Rounded edges for the block */
 }
 
-/* Centering the about-container with margin for spacing */
+/* Centering the project-container with margin for spacing */
 .project-container {
     display: flex;
     justify-content: space-between;
@@ -252,29 +253,14 @@ header {
     padding: 0 20px; /* Adds space to the sides */
 }
 
-/* Left Column Styles: Avatar Image and Personal Information */
-.left-column {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center content horizontally */
-    flex: 1;
-    max-width: 650px; /* Increased width for left column */
-    text-align: center; /* Align the text to the center */
-    margin-right: 40px; /* Adds some space between the icon and the text */
+/* Project image style adjustments */
+.project img {
+    width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Prevent overflow and maintain coverage */
+    border-radius: 15px; /* Optional: Rounded corners */
+    overflow: hidden; /* Ensure no content overflows */
 }
-
-
-
-/* Add some margin to the rest of the content so it doesn’t overlap the fixed navbar */
-main {
-    padding-top: 100px; /* Adjust this based on your navbar height */
-}
-
-/* Optional: Change navbar background color when scrolling down */
-header.scrolled {
-    background-color: rgba(51, 51, 51, 0.9); /* Darken background on scroll */
-}
-
 
 /* Add some margin to the rest of the content so it doesn’t overlap the fixed navbar */
 main {
