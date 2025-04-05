@@ -12,17 +12,15 @@ body {
     color: white; /* Default text color */
 }
 
-/* Header Styles (Navigation) */
-header {
-    background-color: rgba(51, 51, 51, 0.8); /* Glass effect with opacity */
-    position: fixed; /* Keep the navbar fixed */
+/* Navigation glassy style effect */
+nav {
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    right: 0;
-    padding: 15px 0;
-    z-index: 100; /* Ensures navbar is always on top */
-    backdrop-filter: blur(10px); /* Blur effect behind the navbar */
-    transition: background-color 0.3s ease-in-out; /* Smooth transition when scrolling */
+    background-color: transparent;
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
 .navigation {
@@ -30,6 +28,7 @@ header {
     justify-content: center; /* Center nav items horizontally */
     align-items: center; /* Center nav items vertically */
     list-style: none;
+    margin: 12px;
 }
 
 .navigation li {
@@ -155,7 +154,7 @@ header {
     margin-bottom: 20px; /* Adds space between the avatar and the paragraph */
 }
 
-.fa-solid {
+.about-avatar .fa-solid {
     display: flex;
     flex-direction: column;
     font-size: 180px; /* Keeps the icon size the same */
@@ -262,12 +261,103 @@ header {
     overflow: hidden; /* Ensure no content overflows */
 }
 
-/* Add some margin to the rest of the content so it doesn’t overlap the fixed navbar */
-main {
-    padding-top: 100px; /* Adjust this based on your navbar height */
+/* Contact Me Now Section */
+
+.contact {
+    padding: 60px 20px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
 }
 
-/* Optional: Change navbar background color when scrolling down */
-header.scrolled {
-    background-color: rgba(51, 51, 51, 0.9); /* Darken background on scroll */
+.contact h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.contact h2::after {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    right: -0.5rem;
+    width: 80%;
+    height: 10px;
+    background-color: rgba(172, 253, 176, 0.5);
+    border-radius: 2px;
+}
+
+.contact-container {
+    margin-top: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #ccc;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #ACFDB0;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #02C1C2;
+    color: white;
+}
+
+.contact-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-links a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #ACFDB0;
+}
+
+
+/* Add some margin to the rest of the content so it doesn’t overlap the fixed navbar */
+main {
+    padding-top: 80px; /* Adjust this based on your navbar height */
+}
+
+/* Changes navbar background color when scrolling down */
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.5); /* dark glassy */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
